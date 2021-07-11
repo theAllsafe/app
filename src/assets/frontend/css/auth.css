@@ -1,0 +1,28 @@
+.authHeader{
+	background-color: #261c6b;
+}
+.authBody{
+	padding: 2%;
+	background-color: #FFF;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.authBody .termsAndConditions{
+	margin-left: -12px;
+}
+@media only screen and (max-width: 580px){
+	.authBody .text-right{
+		text-align: left !important;
+	}
+	.authBody span.marginLeft{
+		margin-left: 10px;
+	}
+	.authBody .fieldContainer svg.prepend{
+		left: -13px;
+	}
+	.authBody .fieldContainer input{
+		left: 4%;
+	}
+	.authBody .termsAndConditions{
+		margin-left: 0;
+	}
+}

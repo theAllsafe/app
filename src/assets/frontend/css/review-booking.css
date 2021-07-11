@@ -1,0 +1,105 @@
+.reviewBookingHeader{
+	background-color: #261c6b;
+}
+.reviewHeading h3{
+	font-weight: bold;
+}
+.reviewBooking a.backToPrev{
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+.reviewDetails, .personalDetails{
+	padding: 6%;
+	padding-bottom: 0;
+	border: 1px solid #D1D1D1;
+	border-radius: 10px;
+	min-height: 658px;
+}
+.reviewDetails{
+	padding: 0;
+	padding-top: 4%;
+	overflow: hidden;
+}
+.reviewDetails, .personalDetails small i.smallItalic{
+	
+}
+.reviewDetails span.price{
+	color: red;
+}
+.reviewDetails .text-left{
+	font-weight: bold;
+}
+.reviewDetails .reviewFooter{
+	padding: 2%;
+	background-color: #F1F1F1;
+	border-top: 1px solid #D1D1D1;
+}
+label.italic span{
+	display: inline-block;
+	font-size: 12px;
+	font-style: italic;
+	color: #B1B1B1;
+	margin-top: -2px;
+}
+.reviewFooter input{
+	background-color: transparent;
+}
+.btnPayment{
+	min-width: 40%;
+	padding: 8px;
+	background-color: #ffc043;
+	color: #000;
+	border-radius: 8px;
+	border: none;
+	font-weight: 900;
+	font-size: 1.8rem;
+	transition: all 0.3s ease-in-out;
+}
+.btnPayment:hover{
+	background-color: #000;
+	color: #ffc043;
+}
+.btnPayment:disabled{
+	background-color: #a5a5a5;
+}
+.btnPayment:disabled:hover{
+	color: #000;
+}
+@media only screen and (min-width:  580px) and (max-width: 768px){
+	nav.blue .headerProfile img {
+	    width: 28px;
+	}
+}
+@media only screen and (max-width:  680px){
+	.personalDetails{
+		margin-top: 16px;
+	}
+}
+@media only screen and (max-width: 768px){
+	.fieldContainer input{
+		left: 2%;
+	}
+	.fieldContainer svg.prepend{
+		left: -18px;
+	}
+	.fieldContainer svg.append {
+		right: 10px;
+	}
+	.personalDetails .termsAndConditions{
+		margin-left: -6px;
+	}
+	.reviewFooter input{
+		width: 100%;
+	}
+	.reviewFooter button{
+		width: 100%;
+	}
+	.reviewFooter .col-9{
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 320px){
+	.reviewDetails{
+		font-size: 14px;
+	}
+}

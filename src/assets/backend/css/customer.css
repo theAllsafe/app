@@ -1,0 +1,348 @@
+.customerDashboardHeader{
+	background-color: #261c6b;
+	color: #FFF;
+}
+.customerDashboardHeader .logo{
+	margin-left: 6%;
+	font-size: 2.6rem;
+	margin-top: 10px;
+}
+.customerDashboardHeader .headerDashboard{
+	padding: 12px 2%;
+}
+.customerDashboardHeader .headerDashboard .profilePic{
+	width: 40px;
+	height: 40px;
+}
+.customerDashboardHeader .headerDashboard .menuIcon{
+	margin-top: -20px;
+}
+.customerDashboardHeader .headerDashboard .logo{
+	font-size: 2.4rem;
+	margin-left: 6%;
+}
+.customerDashboardHeader .headerDashboard .text-right{
+	margin-top: 8px;
+}
+.breadCrumb{
+	background-color: #ffc043;
+	padding: 12px;
+	padding-left: 2% !important;
+	padding-right: 2% !important;
+}
+.breadCrumb img{
+	width: 55px;
+	height: 55px;
+	margin-top: -10px;
+}
+.breadCrumb svg{
+	margin-top: -12px;
+}
+.breadCrumb .text-right{
+	margin-top: 8px;
+}
+.dashboardContent{
+	margin-top: 30px;
+	padding-left: 2% !important;
+	padding-right: 2% !important;
+}
+.leftSidebar{
+	background-color: #FFF;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	min-height: 70vh;
+}
+.hoverLink{
+	display: none;
+}
+.leftSidebar .text-center{
+	padding: 30px;
+}
+.leftSidebar .text-center img{
+	width: 115px;
+	height: 115px;
+}
+.leftSidebar ul{
+	display: block;
+	padding: 0;
+	margin: 0;
+	margin-top: 30px;
+	list-style: none;
+}
+.leftSidebar ul li{
+	border-top: 1px solid #000;
+}
+.leftSidebar ul li.last{
+	border-bottom: 1px solid #000;
+}
+.leftSidebar ul li a{
+	display: inline-block;
+	width: 100%;
+	padding: 10px;
+	padding-left: 8%;
+	padding-right: 8%;
+	transition: color 0.3s ease-in-out;
+}
+.leftSidebar ul li a:hover, .leftSidebar ul li a.active{
+	color: #0de0fe !important;
+}
+.leftSidebar ul li ul{
+	padding: 0;
+	margin: 0;
+}
+.leftSidebar ul li.hasSubmenu{
+	padding-left: 0;
+	padding-right: 0;
+}
+.leftSidebar ul li.hasSubmenu ul li a{
+	padding: 10px;
+	padding-left: 16%;
+	padding-right: 16%;
+}
+.leftSidebar ul li.hasSubmenu ul{
+	height: 0;
+	overflow: hidden;
+	transition: all 0.4s ease-in-out;
+}
+.leftSidebar ul li.hasSubmenu.show ul{
+	height: auto;
+	overflow: auto;
+}
+.leftSidebar .hasSubmenu svg{
+	transition: transform 0.3s ease-in-out;
+}
+.leftSidebar .hasSubmenu svg.roated{
+	transform: rotate(90deg);
+}
+.dashboardContent .content{
+	background-color: #FFF;
+	padding: 4%;
+	margin-bottom: 100px;
+}
+.dashboardContent .content .borderRight{
+	border-right:  1px solid #D1D1D1;
+	position: relative;
+}
+.dashboardContent .content .borderRight.last{
+	border: none;
+}
+.dashboardContent .progressCircle{
+	width: 0px;
+	height: 0px;
+}
+.dashboardContent .progressCircle svg{
+	font-size: 2.3rem;
+	color: #000000;
+}
+.content-apponiment{
+	background-color: #FFF;
+}
+.dashboardContent button.today, .dashboardContent button.upcoming, button.btn-upload-profile-pic{
+	width: 120px;
+	background-color: transparent;
+	border: none;
+	padding: 10px;
+	font-weight: bold;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	margin: 2%;
+}
+.dashboardContent button.today.active, .dashboardContent button.upcoming.active, button.btn-upload-profile-pic{
+	background-color: #0de0fe;
+}
+button.btn-upload-profile-pic{
+	color: #FFF;
+	font-weight: 100;
+}
+.content-apponiment table.active{
+	display: block;
+}
+.content-apponiment .profilePic{
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	background-image: url('../../frontend/images/icons/profileIcon.svg');
+	background-position: 0 0;
+	background-size: 100% 100%;
+}
+.customBadge{
+	display: inline-block;
+	width: 90px;
+	padding: 2px;
+	font-size: 14px;
+	font-weight: bold;
+	border-top-left-radius: 50px;
+	margin-top: 4px;
+	border-bottom-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+.customBadge.danger{
+	background-color: rgb(255, 208, 208);
+	color: rgb(233, 35, 35);
+}
+.customBadge.success{
+	background-color: rgb(208, 255, 232);
+	color: rgb(16, 190, 103);
+}
+.customBadge.info{
+	background-color: rgb(183, 229, 255);
+	color: rgb(54, 169, 236);
+}
+.cahngedProfilePic img{
+	width: 110px;
+	height: 110px;
+}
+.cahngedProfilePic input{
+	display: none;
+}
+.padding-4{
+	padding-left: 4% !important;
+	padding-right: 4% !important;
+}
+label.inputInDashboard{
+	width: 100%;
+}
+label.inputInDashboard input, label.inputInDashboard select, label.inputInDashboard textarea, input.add-services{
+	padding: 10px;
+	width: 100%;
+	background: transparent;
+	border: 1px solid #D1D1D1;
+	border-radius: 4px;
+	transition: border-color 0.3s ease-in-out;
+}
+label.inputInDashboard select{
+	padding: 12px;
+}
+ label.inputInDashboard textarea{
+	 height: 160px;
+ }
+label.inputInDashboard input:focus, , label.inputInDashboard select:focus{
+	border-color: #0de0fe;
+}
+label.inputInDashboard input:read-only{
+	background-color: #e4e4e4;
+}
+label.inputInDashboard span.required{
+	color: red;
+}
+hr.dashboardDivider{
+	border-top: 3px solid #b1b1b1 !important;
+}
+button.btn-yellow{
+	padding: 16px;
+	width: 160px;
+	border: none;
+	background-color: #ffc043;
+	color: #000000;
+	font-weight: bold;
+	border-radius: 4px;
+}
+.service-detail{
+	background-color: #FFF;
+	padding-bottom: 110px;
+}
+.service-detail .service{
+	border-top: 3px solid #b1b1b1;
+	padding: 16px;
+}
+.service-detail .service h2{
+	font-weight: bold;
+}
+.service-detail .service:last-child{
+	border-bottom: 3px solid #b1b1b1;
+	margin-bottom: 50px;
+}
+.service-detail .service .price-devider{
+	border-right: 2px solid #b1b1b1;
+}
+.service-detail .service button{
+	padding: 6px;
+	background-color: #ffc043;
+	color: #000000;
+	font-weight: bold;
+	width: 110px;
+	border: none;
+}
+input.add-services{
+	padding-top: 12px;
+	padding-bottom: 12px
+}
+.selectedServices{
+	background-color: #ffc043;
+	padding: 10px;
+	margin-top: 12px;
+}
+@media only screen and (max-width: 1024px){
+	.fullWidth.col-md-9{
+		flex: 0 0 100% !important;
+    	max-width: 100% !important;
+	}
+	.leftsidebarContainer{
+		position: absolute !important;
+		left: -103.5%;
+		right: 0%;
+		top: -9.5%;
+		bottom: 0;
+		z-index: 9;
+		transition: left 0.3s ease-in-out;
+	}
+	.fullWidth.col{
+		position: static;
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+	.dashboardContent .leftsidebarContainer, .dashboardContent .leftsidebarContainer .col{
+		padding-left: 0% !important;
+		padding-right: 0% !important;
+	}
+	.dashboardContent .leftsidebarContainer{
+		margin-top: 0 !important;
+	}
+	.leftSidebar .closeIcon{
+		font-size: 24px;
+		display: block;
+	}
+	.dashboardContent .leftsidebarContainer.show{
+		left: 0;
+	}
+	.appoinmentName .profilePic.ml-5{
+		margin-left: 0.8rem !important;
+	}
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+	.leftsidebarContainer{
+		top: -15.5%;
+	}
+}
+@media only screen and (max-width: 768px){
+	td.appoinmentName{
+		min-width: 230px;
+	}
+	.appoinmentName .ml-5{
+		margin-left: 1rem !important;
+	}
+	.allSelectedServices{
+		padding: 10px;
+	}
+}
+@media only screen and (max-width: 580px){
+	.customerDashboardHeader .headerDashboard .text-right{
+		display: none;
+	}
+	.dashboardContent .content .borderRight{
+		margin-bottom: 30px;
+		margin-left: 15px;
+	}
+	.dashboardContent .content{
+		margin-bottom: 30px;
+	}
+	.service-detail .service .price-devider{
+		border-right: none;
+	}
+	.service-detail .service{
+		overflow: hidden;
+	}
+}

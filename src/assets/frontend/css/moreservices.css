@@ -1,0 +1,275 @@
+.bannerTwo{
+	background-image: url('../images/bannerTwo.png');
+	background-size: 100% 100%;
+	background-position: 0 0;
+	position: relative;
+	background-color: #261c6b;
+}
+.bannerTwo .headerProfile img{
+	width: 38px;
+}
+.bannerTwo h5, .bannerTwo span{
+	color: #FFF;
+	font-weight: normal;
+}
+.bannerTwo h5 img{
+	width: 10px;
+	height: 10px;
+}
+.bannerTwo h5{
+	position: relative;
+}
+.bannerTwo span.bannerText{
+	font-size: 2.5rem;
+	font-weight: normal;
+}
+.bannerTwo .servicesHome{
+	margin-top: 60px;
+	padding-bottom: 20px;
+}
+.bannerTwo .servicesHome img{
+	border-radius: 50%;
+}
+.bannerTwo span.firstService{
+	margin-left: 0;
+}
+.bannerTwo .moreServiceContainer{
+	padding-left: 3%;
+	padding-right: 3%;
+}
+.filterIcon {
+    position: absolute !important;
+    left: -15px;
+    top: 15%;
+    width: 60px !important;
+    transition: left 0.5s ease-in-out;
+}
+.searchSection{
+	padding-left: 5% !important;
+	padding-right: 5% !important;
+}
+.searchSection .searchContainer{
+	position: relative;
+	height: 55px;
+	border: 1px solid #525252;
+	border-radius: 3px;
+	background: transparent;
+}
+.searchSection svg{
+	position: absolute;
+	left: 12px;
+	top: 16px;
+	font-weight: bold;
+}
+.searchSection input{
+	padding-left: 20px;
+	padding-bottom: 4px;
+	background-color: transparent;
+}
+.searchContainer.place{
+	background-color: #f1f1f1;
+}
+.searchContainer.place img{
+	position: absolute;
+	top: 17px;
+    left: 13px;
+}
+.searchContainer.place .runcom, .searchContainer.place .now{
+	position: absolute;
+	left: 50px;
+	top: 13px;
+	font-weight: bold;
+}
+.searchContainer.place .now{
+	left: 86%;
+}
+.excludeUnavailable{
+	padding-top: 35px;
+}
+.filters{
+	padding: 5px;
+	padding-bottom: 8px;
+	border: 1px solid #525252;
+}
+.filters.col{
+	width: 160px;
+}
+svg.stars{
+	position: static;
+	color: #ffc043;
+}
+.vendors.col{
+    padding-right: 9%;
+}
+.vendors.col.last{
+    padding-right: 0%;
+}
+.vendors .allVendors{
+	background-color: #FFF;
+	box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+}
+.vendors .allVendors .body{
+	padding: 20px 3px;
+}
+.vendors .allVendors .body img{
+	width: 75px;
+	height: 75px;
+}
+.vendors .allVendors .footers{
+	padding: 3px !important;
+}
+.vendors .allVendors .footers a{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	padding: 6px;
+	background-color: #ffc043;
+	color: #FFF;
+	transition: background-color 0.3s ease-in-out;
+}
+.vendors .allVendors .footers .btnCall a{
+	border-right: 3px solid #FFF;
+}
+.vendors .allVendors .footers a:hover{
+	background-color: #000;
+}
+.filterBy{
+	position: absolute !important;
+	left: -100%;
+    top: 19%;
+    width: 370px !important;
+    background-color: #dcdcdc;
+    padding: 28px;
+    transition: left 0.5s ease-in-out;
+}
+.filterBy.show{
+	left: 0px;
+}
+.filterBy span.heading{
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.filterBy .text-right{
+	cursor: pointer;
+}
+.filterBy button{
+	padding: 0.5px 10px;
+	border: 1px solid #000;
+	background-color: transparent;
+}
+.filterBy label{
+	position: relative;
+	margin-bottom: 20px;
+}
+.filterBy label input{
+	display: none;
+}
+.filterBy label span.labels{
+	position: absolute;
+	left: 50px;
+	top: 2px;
+	width: 180px;
+}
+.filterBy label span.outerBorder::before{
+	content: '';
+	position: absolute;
+	left: 24px;
+	top: 8px;
+	width: 18px;
+	height: 18px;
+	border: 3px solid #000;
+	border-radius: 50%;
+}
+.filterBy label input:checked+span.outerBorder::after{
+	content: '';
+	position: absolute;
+	left: 27px;
+	top: 10px;
+	width: 13px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: #7dff8a;
+}
+.filterBy label svg.empty{
+	fill: #b5b4b4;
+}
+.filterBy select, .filterBy input{
+	width: 100%;
+	background-color: transparent;
+	border: 1px solid #000;
+	padding: 4px;
+}
+.slidignLeft{
+	transition: margin-left 0.5s ease-in-out;
+}
+.slidignLeft.sliding{
+    margin-left: 331px;
+}
+.filterIcon.sliding{
+	left: -100%;
+}
+@media only screen and (max-width: 941px){
+	.bannerTwo .headerProfile img{
+		width: 28px;
+	}
+	.filters.col{
+		width: 100% !important;
+	}
+	.searchSection .col-5{
+		flex: 50%;
+    	max-width: 47%;
+	}
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+	.searchSection .col-md-4, .searchSection.col-md-3 {
+	    flex: 0 0 50%;
+	    max-width: 50%;
+	}
+	.searchSection .col-md-2{
+		 flex: 0 0 25%;
+	    max-width: 25%;
+	}
+	.filterBy{
+		top: 15.6%;
+	}
+}
+@media only screen and (max-width: 768px) and (min-width: 580px){
+	.excludeUnavailable.col-md-2{
+		flex: 0 0 50%;
+	    max-width: 50%;
+	}
+	.filterIcon{
+		top: 10%;
+	}
+	.filterBy {
+	    top: 12.5%;
+	}
+}
+@media only screen and (max-width: 480px){
+	.bannerTwo span.bannerText{
+		font-size: 2rem;
+	}
+	.bannerTwo .text-center{
+		margin-top: 50px;
+	}
+	.falsePadding, .falsePadding .searchContainer {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.filterIcon{
+		top: 5.6%;
+	}
+}
+@media only screen and (max-width: 580px){
+	.filterBy{
+		top: 5.7%;
+	}
+	.excludeUnavailable{
+		text-align: center;
+	}
+	.allVendors.col{
+		padding-right: 6px !important;
+	}
+}

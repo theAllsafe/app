@@ -1,0 +1,275 @@
+.business-ac-wrapper{
+    margin: 16px 1.4%;
+    
+}
+.business-ac-wrapper .business-ac-container{
+    border: 10px solid #c4c4c4;
+}
+.progressIndicatorBg{
+    background-color: #ebebeb;
+    padding: 3rem;
+    position: relative;
+}
+.progressIndicatorBg .progressBarOne, .progressIndicatorBg .progressBarTwo, .progressIndicatorBg .progressBarThree, .progressIndicatorBg .progressBarFour, .progressIndicatorBg .progressBarFive{
+    display: inline-block;
+    width: 22.5%;
+    height: 0.3rem;
+    background-color: #cfcece;
+    position: absolute;
+    left: 4%;
+    top: 2.8rem;
+}
+.progressIndicatorBg .progressBarTwo{
+    left: 26.5%;
+}
+.progressIndicatorBg .progressBarThree{
+    left: 49%;
+}
+.progressIndicatorBg .progressBarFour{
+    left: 71.5%;
+}
+.progressIndicatorBg .progressBarOne.completed, .progressIndicatorBg .progressBarTwo.completed, .progressIndicatorBg .progressBarThree.completed, .progressIndicatorBg .progressBarFour.completed, .progressIndicatorBg .progressBarFive.completed{
+    background-color: #000000;
+}
+.progressIndicatorBg .progressIndicatorOne, .progressIndicatorBg .progressIndicatorTwo, .progressIndicatorBg .progressIndicatorThree, .progressIndicatorBg .progressIndicatorFour, .progressIndicatorBg .progressIndicatorFive{
+    display: inline-block;
+    position: absolute;
+    left: 4%;
+    top: 33%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: #cfcece;
+    color: #FFF;
+    border-radius: 50%;
+}
+.progressIndicatorBg .progressIndicatorOne.completed, .progressIndicatorBg .progressIndicatorTwo.completed, .progressIndicatorBg .progressIndicatorThree.completed, .progressIndicatorBg .progressIndicatorFour.completed, .progressIndicatorBg .progressIndicatorFive.completed{
+    background-color: #000000;
+}
+.progressIndicatorBg .progressIndicatorTwo{
+    left: 26.5%;
+}
+.progressIndicatorBg .progressIndicatorThree{
+    left: 49%;
+}
+.progressIndicatorBg .progressIndicatorFour{
+    left: 71.5%;
+}
+.progressIndicatorBg .progressIndicatorFive{
+    left: 94%;
+}
+.progressIndicatorBg .progressIndicatorOne.active, .progressIndicatorBg .progressIndicatorTwo.active, .progressIndicatorBg .progressIndicatorThree.active, .progressIndicatorBg .progressIndicatorFour.active, .progressIndicatorBg .progressIndicatorFive.active{
+    background-color: #f7703a;
+}
+.progressIndicatorBg .stepOneText, .progressIndicatorBg .stepTwoText, .progressIndicatorBg .stepThreeText , .progressIndicatorBg .stepFourText, .progressIndicatorBg .stepFiveText{
+    display: inline-block;
+    position: absolute;
+    left: 2%;
+    top: 70%;
+    font-size: 14px;
+    font-weight: bold;
+}
+.progressIndicatorBg .stepTwoText{
+    left: 25%;
+}
+.progressIndicatorBg .stepThreeText{
+    left: 46%;
+}
+.progressIndicatorBg .stepFourText{
+    left: 70%;
+}
+.progressIndicatorBg .stepFiveText{
+    left: 91%;
+}
+.progressIndicatorBg .stepOneText.active, .progressIndicatorBg .stepTwoText.active, .progressIndicatorBg .stepThreeText.active, .progressIndicatorBg .stepFourText.active, .progressIndicatorBg .stepFiveText.active{
+    color: #f7703a;
+}
+.stapeName{
+    display: none;
+    color: #f7703a;
+}
+button.businessAcBtn{
+    background-color: #f7703a;
+    color: #FFF;
+    border: none;
+    padding: 12px;
+    width: 180px;
+    border-radius: 4px;
+    font-size: 24px;
+    margin-top: 3rem;
+}
+.businessAcForm .card button, .businessAcForm .card button{
+    color: #b9b9b9;
+    font-size: 1.8rem;
+    padding-left: 0 !important;
+    outline: none !important;
+    font-style: italic;
+    width: 100%;
+    text-decoration: none;
+    text-align: left;
+    border: none;
+}
+.businessAcForm .card{
+    background-color: transparent;
+    border-width: 3px;
+    border-color: #b9b9b9;
+    font-style: italic;
+    color: #b9b9b9;
+    font-size: 1.8rem;
+    border-radius: 10px;
+}
+.businessAcForm .card-header{
+    background-color: transparent;
+    border-bottom-width: 3px;
+    border-bottom-color: #b9b9b9;
+}
+.businessAcForm .card-body{
+    padding: 0 !important;
+}
+.businessAcForm .card-body ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.businessAcForm .card-body ul li{
+    font-size: 1.3rem;
+    padding: 12px;
+    border-bottom: 3px solid #b9b9b9;
+    padding-right: 12px;
+}
+.businessAcForm .card-body ul li:last-child{
+    border-bottom: none;
+}
+.businessAcForm label.checkboxBusiness{
+    position: relative;
+}
+.businessAcForm label.checkboxBusiness input{
+    display: none;
+}
+.businessAcForm label.checkboxBusiness span::before{
+    content: '';
+    position: absolute;
+    left: -46px;
+    top: 2px;
+    width: 42px;
+    height: 22px;
+    background-color: #b9b9b9;
+    border-radius: 25px;
+    transition: background-color 0.3s ease-in-out;
+}
+.businessAcForm label.checkboxBusiness span::after{
+    content: '';
+    position: absolute;
+    left: -43px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background-color: #FFF;
+    border-radius: 50%;
+    transition: left 0.3s ease-in-out;
+}
+.businessAcForm label.checkboxBusiness input:checked+span::before{
+    background-color: #0ea816;
+}
+.businessAcForm label.checkboxBusiness input:checked+span::after{
+    left: -23px;
+}
+.businessAcForm .inputInDashboard.fileType input[type="file"]{
+    display: none;
+}
+.businessAcForm .inputInDashboard.fileType{
+    position: relative;
+}
+.businessAcForm .inputInDashboard.fileType::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: -8px;
+    right: 20%;
+    border: 2px solid #b1b1b1;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    height: 50px;
+}
+.businessAcForm .inputInDashboard.fileType::after{
+    content: 'Choose File';
+    position: absolute;
+    left: 80%;
+    top: -8px;
+    right: 0%;
+    border: 2px solid #b1b1b1;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 50px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 1024px){
+    .progressIndicatorBg .stepFiveText {
+        left: 87%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .progressIndicatorBg .stepFiveText {
+        left: 83%;
+    }
+}
+@media only screen and (max-width: 580px){
+    .progressIndicatorBg .stepOneText, .progressIndicatorBg .stepTwoText, .progressIndicatorBg .stepThreeText , .progressIndicatorBg .stepFourText, .progressIndicatorBg .stepFiveText{
+        display: none;
+    }
+    .progressIndicatorBg{
+        padding: 2rem;
+    }
+    .progressIndicatorBg .progressIndicatorOne, .progressIndicatorBg .progressIndicatorTwo, .progressIndicatorBg .progressIndicatorThree, .progressIndicatorBg .progressIndicatorFour, .progressIndicatorBg .progressIndicatorFive{
+        width: 20px;
+        height: 20px;
+        top: 27%;
+    }
+    .progressIndicatorBg .progressIndicatorOne{
+        left: 3%;
+    }
+    .progressIndicatorBg .progressIndicatorTwo{
+        left: 25.5%;
+    }
+    .progressIndicatorBg .progressIndicatorThree{
+        left: 48%;
+    }
+    .progressIndicatorBg .progressIndicatorFour{
+        left: 70.5%;
+    }
+    .progressIndicatorBg .progressIndicatorFive{
+        left: 93%;
+    }
+    .business-ac-container h2{
+        font-size: 24px;
+    }
+    .business-ac-container h2.pl-5{
+        padding-left: 0.8rem !important;
+    }
+    .stapeName{
+        display: inline-block !important;
+    }
+    .businessAcForm .text-right{
+        text-align: left !important;
+        font-size: 16px !important;
+    }
+    .businessAcForm .mt-4{
+        margin-top: 0 !important;
+    }
+    button.businessAcBtn{
+        width: 100%;
+    }
+    .businessAcForm.documents .text-right{
+        margin-top: 35px !important;
+    }
+    .businessAcForm .inputInDashboard.fileType::before{
+        right: 29%;
+    }
+    .businessAcForm .inputInDashboard.fileType::after{
+        left: 70%;
+        font-size: 14px;
+    }
+}

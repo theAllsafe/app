@@ -1,0 +1,270 @@
+.banner{
+	min-height: 600px;
+	background-image: url('../images/banner.svg');
+	background-size: 100%;
+	background-position: 0 0;
+	background-color: #ffc043;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.banner h1{
+	font-size: 3.3rem;
+	font-weight: 900;
+}
+h1.h1{
+	font-size: 4rem !important;
+	font-weight: 900;
+}
+.banner .my-5{
+	margin-top: 6rem !important;
+}
+.searchContainer{
+	position:  relative;
+	background-color: #FFF;
+	border: none;
+	margin-top: 20px;
+	height: 58px;
+}
+.searchContainer input{
+	background-color: transparent;
+	border: none;
+	padding: 9px;
+	width: 84%;
+	position: absolute;
+	top: 6px;
+	left: 8%;
+}
+.searchContainer img{
+	width: 16px;
+	height: 16px;
+}
+.searchContainer img.prepend{
+	position: absolute;
+	left: 2%;
+	top: 32%;
+}
+.searchContainer img.append{
+	position: absolute;
+	right: 2%;
+	top: 32%;
+}
+.banner button{
+	margin-top: 19px;
+	padding: 18px;
+	width: 180px;
+	background-color: #000000;
+	color: #FFFFFF;
+	margin-left: 12px;
+	border: none;
+}
+.bannerSectionBelow{
+	position: absolute !important;
+	top: 84%;
+	left: 0;
+}
+.bannerBox{
+	padding: 20px;
+	background-color: #fff2d9;
+	border-radius: 20px;
+	height: 180px;
+	position: relative;
+	margin: 12px 2.2%;
+}
+.bannerBox p{
+	text-transform: uppercase;
+	font-size: 20px;
+}
+.servicesHome{
+	margin-top: 185px;
+	padding-left: 24px;
+}
+.servicesHome img{
+	width: 62px;
+	margin-bottom: 10px;
+}
+.servicesHome span{
+	display: inline-block;
+	margin-right: 4%;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+}
+span.firstService{
+	margin-left: 2%;
+}
+.devider hr{
+	border-top: 1px solid #8c8c8c;
+	margin: 1.4%;
+}
+.mainContent h1{
+	font-weight: bold;
+	font-size: 3rem;
+	margin: 1.4%;
+}
+.mainContent .content .p-4{
+	padding-right: 1.7rem !important;
+}
+.mainContent .content a{
+	font-size: 20px;
+}
+.vendorContainer{
+	height: 340px;
+	background-image: url('../images/bottle.jpg');
+	background-size: 100% 100%;
+	background-position: 0 0;
+	position: relative;
+	margin-top: 24px;
+	overflow: hidden;
+	border-radius: 4px;
+}
+.vendorContainer .normalDetails{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 2%;
+	background-color: rgba(0, 0, 0, 0.65);
+	padding: 20px;
+	transition: left 0.3s ease-in-out;
+}
+.vendorContainer{
+	color: #FFF;
+}
+.vendorContainer .hoverDetails{
+	position: absolute;
+	left: 100%;
+	right: 0%;
+	top: 0;
+	bottom: 2%;
+	background-color: rgba(0, 0, 0, 0.65);
+	padding: 20px;
+	transition: left 0.3s ease-in-out;
+}
+.vendorContainer:hover .normalDetails{
+	left: -100%;
+}
+.vendorContainer .normalDetails svg{
+	display: inline-block;
+	padding-right: 2px;
+	fill: #ffc043;
+}
+.vendorContainer:hover .hoverDetails{
+	left: 0%;
+}
+.btnBooking{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 6px;
+	font-size: 1.4rem;
+	background-color: #ffc043;
+	text-decoration: none;
+	color: #000;
+}
+.vendorContainer:hover .btnBooking{
+	color: #000 !important;
+}
+@media only screen and (max-width: 480px){
+	.mainContent h1{
+		font-size: 1.6rem;
+	}
+	.btnContainer{
+		text-align: center;
+	}
+	.servicesHome span{
+		margin-right: 2%;
+	}
+	.mainContent.col{
+		padding: 0 !important;
+	}
+}
+@media only screen and (max-width: 768px){
+	.bannerSectionBelow{
+		top: 88%;
+	}
+	.servicesHome{
+		margin-top: 440px;
+	}
+	.servicesHome{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+@media only screen and (max-width: 1024px){
+	.mainContent .content .p-4{
+		padding: 0.5rem !important;
+	}
+	.bannerBox p{
+		font-size: 16px;
+	}
+	.col-md-3 {
+	    flex: 0 0 33.333333333% !important;
+	    max-width: 33.333333333% !important;
+	    padding-left: 0 !important;
+	}
+	.businessAccountLink.show{
+		left: -1.5%;
+	}
+}
+@media only screen and (max-width: 768px){
+	.bannerBox{
+		margin: 12px 1.2%;
+	}
+	.servicesHome{
+		margin-top: 200px;
+	}
+}
+@media only screen and (max-width: 812px){
+	.col-md-3 {
+	    flex: 0 0 50% !important;
+	    max-width: 50% !important;
+	    padding-left: 8px !important;
+	}
+}
+@media only screen and (max-width: 580px){
+	.banner{
+		min-height: 400px;
+	}
+	.banner h1{
+		font-size: 2rem;
+		text-align: center;
+	}
+	.col-md-3 {
+	    flex: 0 0 100% !important;
+	    max-width: 100% !important;
+	    padding-left: 8px !important;
+	}
+	.banner .my-5{
+		margin-top: 1.6rem !important;
+	}
+	.bannerBox.col{
+		flex-basis: 50%;
+		max-width: 47.5%;
+	}
+	.bannerBox.col.last{
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+	.servicesHome {
+	    margin-top: 636px;
+	}
+	.servicesHome img{
+		width: 48px !important;
+	}
+	.servicesHome span{
+		font-size: 16px !important;
+	}
+	.mainContent h1{
+		font-size: 1.6rem !important;
+	}
+}
+@media only screen and (max-width: 414px){
+	.businessAccountLink{
+		left: -104%;
+	}
+	.businessAccountLink.show{
+		left: -3.2%;
+	}
+}
